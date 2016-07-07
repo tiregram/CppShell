@@ -27,3 +27,11 @@
 *.exe
 *.out
 *.app
+
+# cmake
+CMakeCache.txt
+CMakeFiles
+MakeFile
+cmake_install.cmake
+build.ninja
+rules.ninja
