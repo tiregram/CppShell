@@ -38,6 +38,21 @@ void remove(std::string name);
     ((NodeValue<T>*) (this->values[name]))->setValue(elem);
   }
 
+  void setString(std::string name ,std::string elem)
+  {
+    ((NodeValue<T>*) (this->values[name]))->toString(elem);
+  }
+
+  std::string getString(std::string name)
+  {
+    if( this->values.count(name))
+      return ((NodeValue<T>*) (this->values[name]))->toString();
+    else
+      std::cout << "error no key " << name << std::endl;
+
+    return NULL;
+  }
+
 
 };
 

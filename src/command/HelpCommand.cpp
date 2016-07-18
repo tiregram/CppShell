@@ -13,7 +13,7 @@ void HelpCommand::doAction(Line& command,Env  &env)
 
   if(command.words.size() < 2)
     {
-      std::cout << " deuxiemme argument: help second arg" << std::endl;
+      std::cout << " deuxiemme argument: help second_arg" << std::endl;
       return;
     }
 
